@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/rak-porcelain-chatbot/static/css/main.a9d37ab9.css",
-    "main.js": "/rak-porcelain-chatbot/static/js/main.983f1a90.js",
+    "main.js": "/rak-porcelain-chatbot/static/js/main.dcca77c7.js",
     "index.html": "/rak-porcelain-chatbot/index.html",
     "main.a9d37ab9.css.map": "/rak-porcelain-chatbot/static/css/main.a9d37ab9.css.map",
-    "main.983f1a90.js.map": "/rak-porcelain-chatbot/static/js/main.983f1a90.js.map"
+    "main.dcca77c7.js.map": "/rak-porcelain-chatbot/static/js/main.dcca77c7.js.map"
   },
   "entrypoints": [
     "static/css/main.a9d37ab9.css",
-    "static/js/main.983f1a90.js"
+    "static/js/main.dcca77c7.js"
   ]
 }
