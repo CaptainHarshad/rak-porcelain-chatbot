@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import './ChatWidget.css';
 
-// Cache buster: 2025-10-17 - Provenance formatting fix
+// Cache buster: 2025-10-17-v2 - Provenance formatting debug
 
 interface Message {
   id: string;
@@ -147,38 +147,43 @@ const ChatWidget: React.FC<ChatWidgetProps> = ({
   const formatProvenance = (provenance: any[]) => {
     if (!provenance || provenance.length === 0) return null;
     
+    console.log('Provenance data:', provenance); // Debug log
+    
     return (
       <div className="chat-widget__provenance">
         <div className="chat-widget__provenance-title">📚 Sources:</div>
-        {provenance.map((item, index) => (
-          <div key={index} className="chat-widget__provenance-item">
-            <div className="chat-widget__provenance-header">
-              <span className="chat-widget__provenance-source">
-                {item.source_type === 'description' ? '📝 Product Description' : 
-                 item.source_type === 'faq' ? '❓ FAQ' : 
-                 item.source_type === 'document' ? '📄 Document' : 
-                 item.source_type}
-              </span>
-              {item.similarity && (
-                <span className="chat-widget__provenance-similarity">
-                  {Math.round(Math.min(item.similarity * 100, 100))}% match
+        {provenance.map((item, index) => {
+          console.log('Provenance item:', item); // Debug log
+          return (
+            <div key={index} className="chat-widget__provenance-item">
+              <div className="chat-widget__provenance-header">
+                <span className="chat-widget__provenance-source">
+                  {item.source_type === 'description' ? '📝 Product Description' : 
+                   item.source_type === 'faq' ? '❓ FAQ' : 
+                   item.source_type === 'document' ? '📄 Document' : 
+                   item.source_type}
                 </span>
+                {item.similarity && (
+                  <span className="chat-widget__provenance-similarity">
+                    {Math.round(Math.min(item.similarity * 100, 100))}% match
+                  </span>
+                )}
+              </div>
+              {item.text_snippet && (
+                <div className="chat-widget__provenance-snippet">
+                  {item.text_snippet.length > 150 
+                    ? `${item.text_snippet.substring(0, 150)}...` 
+                    : item.text_snippet}
+                </div>
+              )}
+              {item.product_id && (
+                <div className="chat-widget__provenance-id">
+                  Product ID: {item.product_id.substring(0, 8)}...
+                </div>
               )}
             </div>
-            {item.text_snippet && (
-              <div className="chat-widget__provenance-snippet">
-                {item.text_snippet.length > 150 
-                  ? `${item.text_snippet.substring(0, 150)}...` 
-                  : item.text_snippet}
-              </div>
-            )}
-            {item.product_id && (
-              <div className="chat-widget__provenance-id">
-                Product ID: {item.product_id.substring(0, 8)}...
-              </div>
-            )}
-          </div>
-        ))}
+          );
+        })}
       </div>
     );
   };
