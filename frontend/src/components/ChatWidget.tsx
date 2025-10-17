@@ -171,9 +171,7 @@ const ChatWidget: React.FC<ChatWidgetProps> = ({
               </div>
               {item.text_snippet && (
                 <div className="chat-widget__provenance-snippet">
-                  {item.text_snippet.length > 150 
-                    ? `${item.text_snippet.substring(0, 150)}...` 
-                    : item.text_snippet}
+                  {item.text_snippet}
                 </div>
               )}
               {item.product_id && (
