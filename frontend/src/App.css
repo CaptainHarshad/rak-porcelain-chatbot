@@ -1,0 +1,28 @@
+/* App.css */
+.App {
+  text-align: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.App-header {
+  background-color: #0A2342;
+  padding: 20px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.App-title {
+  font-size: 2rem;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+
+.App-subtitle {
+  font-size: 1rem;
+  margin: 10px 0 0 0;
+  opacity: 0.9;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+}

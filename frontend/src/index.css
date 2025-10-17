@@ -1,0 +1,34 @@
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  min-height: 100vh;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* RAK Porcelain Brand Colors */
+:root {
+  --rak-navy: #0A2342;
+  --rak-gold: #C5A475;
+  --rak-white: #FFFFFF;
+  --rak-gray-light: #F5F5F5;
+  --rak-gray-medium: #E1E5E9;
+  --rak-text-dark: #333333;
+  --rak-text-light: #666666;
+  --rak-shadow: rgba(10, 35, 66, 0.1);
+  --rak-shadow-light: rgba(197, 164, 117, 0.2);
+}

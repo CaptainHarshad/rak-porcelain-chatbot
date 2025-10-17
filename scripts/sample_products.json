@@ -1,0 +1,86 @@
+[
+  {
+    "name": "RAK Porcelain Dinner Set - Classic White",
+    "description": "Elegant 12-piece dinner set featuring hand-painted gold accents on pristine white porcelain. Each piece is carefully crafted using traditional techniques passed down through generations. The set includes 4 dinner plates, 4 salad plates, 4 bowls, and 4 cups with saucers. Perfect for formal dining occasions and special celebrations.",
+    "category": "Dinnerware",
+    "sku": "RAK-DS-001",
+    "price": 299.99,
+    "specifications": {
+      "pieces": 12,
+      "material": "porcelain",
+      "colors": ["white", "gold"],
+      "dishwasher_safe": true,
+      "microwave_safe": true,
+      "oven_safe": false,
+      "hand_painted": true,
+      "country_of_origin": "Turkey"
+    },
+    "faqs": [
+      {
+        "question": "Is this dinner set dishwasher safe?",
+        "answer": "Yes, this dinner set is dishwasher safe. However, we recommend using a gentle cycle and avoiding harsh detergents to preserve the hand-painted gold accents."
+      },
+      {
+        "question": "Can I use this set in the microwave?",
+        "answer": "Yes, the porcelain is microwave safe. The gold accents are applied using food-safe materials that won't be affected by microwave heating."
+      },
+      {
+        "question": "How should I care for the hand-painted gold accents?",
+        "answer": "To maintain the gold accents, hand wash with mild soap and avoid abrasive cleaners. The gold is applied using traditional techniques and will last for many years with proper care."
+      }
+    ]
+  },
+  {
+    "name": "RAK Porcelain Tea Set - Blue Floral",
+    "description": "Traditional 6-piece tea set featuring delicate blue floral patterns on white porcelain. This elegant set includes a teapot, sugar bowl, creamer, and 3 teacups with saucers. The intricate floral design is hand-painted using traditional Turkish techniques, making each piece unique. Perfect for afternoon tea and special occasions.",
+    "category": "Tea Sets",
+    "sku": "RAK-TS-001",
+    "price": 199.99,
+    "specifications": {
+      "pieces": 6,
+      "material": "porcelain",
+      "colors": ["white", "blue"],
+      "dishwasher_safe": true,
+      "microwave_safe": true,
+      "hand_painted": true,
+      "teapot_capacity": "1.2 liters",
+      "country_of_origin": "Turkey"
+    },
+    "faqs": [
+      {
+        "question": "What is the capacity of the teapot?",
+        "answer": "The teapot has a capacity of 1.2 liters, which is perfect for serving 4-6 cups of tea."
+      },
+      {
+        "question": "Are the floral patterns hand-painted?",
+        "answer": "Yes, each piece features hand-painted floral patterns using traditional Turkish techniques. This means each piece is unique and has its own character."
+      }
+    ]
+  },
+  {
+    "name": "RAK Porcelain Vase - Decorative",
+    "description": "Handcrafted decorative vase featuring intricate geometric patterns in gold and blue on white porcelain. This stunning piece is perfect for displaying fresh flowers or as a standalone decorative element. The vase measures 12 inches in height and features a classic amphora shape with modern design elements.",
+    "category": "Decorative",
+    "sku": "RAK-V-001",
+    "price": 89.99,
+    "specifications": {
+      "height": "12 inches",
+      "diameter": "6 inches",
+      "material": "porcelain",
+      "colors": ["white", "gold", "blue"],
+      "handmade": true,
+      "water_tight": true,
+      "country_of_origin": "Turkey"
+    },
+    "faqs": [
+      {
+        "question": "Can this vase hold water for fresh flowers?",
+        "answer": "Yes, this vase is water-tight and perfect for displaying fresh flowers. The porcelain is glazed to prevent water absorption."
+      },
+      {
+        "question": "Is this vase handmade?",
+        "answer": "Yes, each vase is handcrafted by skilled artisans using traditional techniques. This ensures each piece is unique and of the highest quality."
+      }
+    ]
+  }
+]

@@ -1,0 +1,337 @@
+/* Import Montserrat font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+/* RAK Porcelain Brand Colors */
+:root {
+  --rak-navy: #0A2342;
+  --rak-gold: #C5A475;
+  --rak-white: #FFFFFF;
+  --rak-gray-light: #F5F5F5;
+  --rak-gray-medium: #E1E5E9;
+  --rak-text-dark: #333333;
+  --rak-text-light: #666666;
+  --rak-shadow: rgba(10, 35, 66, 0.1);
+  --rak-shadow-light: rgba(197, 164, 117, 0.2);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  min-height: 100vh;
+}
+
+.chat-demo {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+.chat-demo__header {
+  background: linear-gradient(135deg, var(--rak-navy) 0%, #1a3a5c 100%);
+  color: var(--rak-white);
+  padding: 40px 20px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.chat-demo__header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="porcelain" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="10" cy="10" r="1" fill="rgba(255,255,255,0.05)"/></pattern></defs><rect width="100" height="100" fill="url(%23porcelain)"/></svg>');
+  opacity: 0.3;
+}
+
+.chat-demo__title {
+  position: relative;
+  z-index: 1;
+}
+
+.chat-demo__title h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  letter-spacing: -1px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.chat-demo__title p {
+  font-size: 18px;
+  font-weight: 300;
+  opacity: 0.9;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.chat-demo__status {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.chat-demo__status-indicator {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--rak-gold);
+  animation: pulse 2s infinite;
+}
+
+.chat-demo__status.connected .chat-demo__status-indicator {
+  background: #4CAF50;
+}
+
+.chat-demo__status.disconnected .chat-demo__status-indicator {
+  background: #f44336;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+/* Content */
+.chat-demo__content {
+  flex: 1;
+  display: flex;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  gap: 40px;
+  width: 100%;
+}
+
+.chat-demo__sidebar {
+  flex: 0 0 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.chat-demo__info,
+.chat-demo__features,
+.chat-demo__examples {
+  background: var(--rak-white);
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px var(--rak-shadow);
+  border: 1px solid var(--rak-gray-medium);
+}
+
+.chat-demo__info h3,
+.chat-demo__features h4,
+.chat-demo__examples h4 {
+  color: var(--rak-navy);
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+
+.chat-demo__info h3 {
+  font-size: 20px;
+}
+
+.chat-demo__features h4,
+.chat-demo__examples h4 {
+  font-size: 16px;
+}
+
+.chat-demo__info p {
+  color: var(--rak-text-light);
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+.chat-demo__features ul {
+  list-style: none;
+  padding: 0;
+}
+
+.chat-demo__features li {
+  color: var(--rak-text-light);
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 8px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.chat-demo__features li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--rak-gold);
+  font-weight: 600;
+}
+
+.chat-demo__example-question {
+  background: var(--rak-gray-light);
+  padding: 12px 16px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  font-size: 13px;
+  color: var(--rak-text-dark);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border-left: 3px solid var(--rak-gold);
+}
+
+.chat-demo__example-question:hover {
+  background: var(--rak-gold);
+  color: var(--rak-navy);
+  transform: translateX(4px);
+}
+
+.chat-demo__widget-container {
+  flex: 1;
+  min-width: 0;
+}
+
+.chat-demo__widget {
+  height: 600px;
+  max-height: 80vh;
+}
+
+/* Footer */
+.chat-demo__footer {
+  background: var(--rak-navy);
+  color: var(--rak-white);
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.chat-demo__footer p {
+  max-width: 800px;
+  margin: 0 auto 20px;
+  font-size: 14px;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+.chat-demo__tech-stack {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  font-size: 12px;
+  opacity: 0.7;
+  font-weight: 500;
+}
+
+.chat-demo__tech-stack span {
+  padding: 4px 8px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .chat-demo__content {
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .chat-demo__sidebar {
+    flex: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  
+  .chat-demo__widget {
+    height: 500px;
+  }
+}
+
+@media (max-width: 768px) {
+  .chat-demo__header {
+    padding: 30px 16px;
+  }
+  
+  .chat-demo__title h1 {
+    font-size: 36px;
+  }
+  
+  .chat-demo__title p {
+    font-size: 16px;
+  }
+  
+  .chat-demo__status {
+    position: static;
+    margin-top: 20px;
+    justify-content: center;
+  }
+  
+  .chat-demo__content {
+    padding: 20px 16px;
+    gap: 20px;
+  }
+  
+  .chat-demo__sidebar {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  
+  .chat-demo__info,
+  .chat-demo__features,
+  .chat-demo__examples {
+    padding: 20px;
+  }
+  
+  .chat-demo__widget {
+    height: 400px;
+  }
+  
+  .chat-demo__footer {
+    padding: 20px 16px;
+  }
+  
+  .chat-demo__tech-stack {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .chat-demo__title h1 {
+    font-size: 28px;
+  }
+  
+  .chat-demo__title p {
+    font-size: 14px;
+  }
+  
+  .chat-demo__content {
+    padding: 16px 12px;
+  }
+  
+  .chat-demo__info,
+  .chat-demo__features,
+  .chat-demo__examples {
+    padding: 16px;
+  }
+  
+  .chat-demo__widget {
+    height: 350px;
+  }
+}

@@ -1,0 +1,220 @@
+{
+  "products": [
+    {
+      "name": "RAK Longitude Bar Accessories Set",
+      "description": "Sophisticated bar accessories collection featuring the signature Longitude design pattern. Premium porcelain pieces designed for the modern bar and entertaining space. Features elegant geometric patterns and gold accents that create a luxurious atmosphere. Each piece is handcrafted with attention to detail and finished with a high-gloss glaze.",
+      "category": "Bar Accessories",
+      "sku": "RAK-LONGITUDE-BAR-001",
+      "price": 299.99,
+      "specifications": {
+        "collection": "Longitude",
+        "material": "porcelain",
+        "colors": ["white", "gold"],
+        "dishwasher_safe": true,
+        "microwave_safe": false,
+        "handmade": true,
+        "pieces": "Bar accessories set",
+        "dimensions": "Various sizes",
+        "care_instructions": "Hand wash recommended, avoid extreme temperature changes"
+      }
+    },
+    {
+      "name": "RAK Premium Flatware Collection - 24 Piece Set",
+      "description": "Luxury flatware collection featuring premium porcelain handles with intricate hand-painted designs. Perfect for fine dining and special occasions. Each piece is handcrafted with attention to detail and features the signature RAK gold accent. The ergonomic design ensures comfortable grip while maintaining elegance.",
+      "category": "Flatware",
+      "sku": "RAK-PREMIUM-FLATWARE-24PC",
+      "price": 199.99,
+      "specifications": {
+        "collection": "RAK Premium",
+        "material": "stainless steel with porcelain handles",
+        "colors": ["silver", "gold", "white"],
+        "dishwasher_safe": true,
+        "microwave_safe": true,
+        "handmade": true,
+        "pieces": 24,
+        "dimensions": "Standard flatware sizes",
+        "care_instructions": "Dishwasher safe, hand dry for best results"
+      }
+    },
+    {
+      "name": "RAK Connoisseur Essentials Wine Glasses - Set of 6",
+      "description": "Premium glassware collection designed for wine connoisseurs. Features crystal-clear glass with subtle porcelain accents and gold detailing. Perfect for wine tasting and sophisticated entertaining. Each glass is hand-blown and features the signature RAK design elements.",
+      "category": "Glassware",
+      "sku": "RAK-CONNOISSEUR-WINE-6PC",
+      "price": 149.99,
+      "specifications": {
+        "collection": "Connoisseur Essentials",
+        "material": "crystal glass with porcelain accents",
+        "colors": ["clear", "gold"],
+        "dishwasher_safe": true,
+        "microwave_safe": false,
+        "handmade": true,
+        "pieces": 6,
+        "dimensions": "Standard wine glass size",
+        "care_instructions": "Hand wash recommended, avoid extreme temperatures"
+      }
+    },
+    {
+      "name": "RAK Longitude Cocktail Shaker Set",
+      "description": "Professional-grade cocktail shaker set featuring the Longitude design pattern. Includes shaker, strainer, and jigger with matching porcelain accents. Perfect for home bartending and professional use. Features a leak-proof design and ergonomic grip.",
+      "category": "Bar Accessories",
+      "sku": "RAK-LONGITUDE-SHAKER-SET",
+      "price": 89.99,
+      "specifications": {
+        "collection": "Longitude",
+        "material": "stainless steel with porcelain accents",
+        "colors": ["silver", "gold", "white"],
+        "dishwasher_safe": true,
+        "microwave_safe": false,
+        "handmade": false,
+        "pieces": "3-piece set",
+        "dimensions": "Standard cocktail shaker size",
+        "care_instructions": "Hand wash recommended"
+      }
+    },
+    {
+      "name": "RAK Premium Dinner Plates - Set of 12",
+      "description": "Elegant dinner plates featuring the premium RAK design with hand-painted gold accents. Perfect for formal dining and special occasions. Each plate is crafted from high-quality porcelain and finished with a lustrous glaze. The rimless design adds a modern touch while maintaining functionality.",
+      "category": "Dinnerware",
+      "sku": "RAK-PREMIUM-DINNER-12PC",
+      "price": 179.99,
+      "specifications": {
+        "collection": "RAK Premium",
+        "material": "porcelain",
+        "colors": ["white", "gold"],
+        "dishwasher_safe": true,
+        "microwave_safe": true,
+        "handmade": true,
+        "pieces": 12,
+        "dimensions": "10.5 inch diameter",
+        "care_instructions": "Dishwasher safe, stack carefully to avoid chipping"
+      }
+    },
+    {
+      "name": "RAK Connoisseur Champagne Flutes - Set of 4",
+      "description": "Sophisticated champagne flutes designed for special celebrations. Features crystal-clear glass with subtle gold accents and the signature RAK design. Perfect for toasting special moments and elegant entertaining. Each flute is hand-blown for superior quality.",
+      "category": "Glassware",
+      "sku": "RAK-CONNOISSEUR-FLUTES-4PC",
+      "price": 79.99,
+      "specifications": {
+        "collection": "Connoisseur Essentials",
+        "material": "crystal glass with gold accents",
+        "colors": ["clear", "gold"],
+        "dishwasher_safe": true,
+        "microwave_safe": false,
+        "handmade": true,
+        "pieces": 4,
+        "dimensions": "Standard champagne flute size",
+        "care_instructions": "Hand wash recommended, store upright"
+      }
+    },
+    {
+      "name": "RAK Longitude Ice Bucket with Tongs",
+      "description": "Stylish ice bucket set featuring the Longitude design pattern. Includes matching tongs and a sleek porcelain exterior. Perfect for keeping beverages chilled during entertaining. Features a double-wall design for optimal insulation and a drip-free pour spout.",
+      "category": "Bar Accessories",
+      "sku": "RAK-LONGITUDE-ICE-BUCKET",
+      "price": 129.99,
+      "specifications": {
+        "collection": "Longitude",
+        "material": "porcelain with stainless steel interior",
+        "colors": ["white", "gold"],
+        "dishwasher_safe": true,
+        "microwave_safe": false,
+        "handmade": true,
+        "pieces": "2-piece set",
+        "dimensions": "8 inch height, 6 inch diameter",
+        "care_instructions": "Hand wash recommended, dry thoroughly"
+      }
+    },
+    {
+      "name": "RAK Premium Salad Plates - Set of 8",
+      "description": "Versatile salad plates featuring the premium RAK design. Perfect for appetizers, salads, and light meals. Each plate is crafted from high-quality porcelain with hand-painted gold accents. The slightly curved design helps contain food while maintaining elegance.",
+      "category": "Dinnerware",
+      "sku": "RAK-PREMIUM-SALAD-8PC",
+      "price": 119.99,
+      "specifications": {
+        "collection": "RAK Premium",
+        "material": "porcelain",
+        "colors": ["white", "gold"],
+        "dishwasher_safe": true,
+        "microwave_safe": true,
+        "handmade": true,
+        "pieces": 8,
+        "dimensions": "8.5 inch diameter",
+        "care_instructions": "Dishwasher safe, stack carefully"
+      }
+    },
+    {
+      "name": "RAK Connoisseur Water Glasses - Set of 8",
+      "description": "Classic water glasses designed for everyday use and special occasions. Features crystal-clear glass with subtle RAK design elements. Perfect for serving water, juice, or other beverages. Each glass is hand-blown for superior clarity and durability.",
+      "category": "Glassware",
+      "sku": "RAK-CONNOISSEUR-WATER-8PC",
+      "price": 99.99,
+      "specifications": {
+        "collection": "Connoisseur Essentials",
+        "material": "crystal glass",
+        "colors": ["clear"],
+        "dishwasher_safe": true,
+        "microwave_safe": false,
+        "handmade": true,
+        "pieces": 8,
+        "dimensions": "Standard water glass size",
+        "care_instructions": "Dishwasher safe, handle with care"
+      }
+    },
+    {
+      "name": "RAK Longitude Bar Spoon Set",
+      "description": "Professional bar spoon set featuring the Longitude design pattern. Includes long spoon, muddler, and jigger with matching porcelain handles. Perfect for crafting cocktails and mixing drinks. Each piece is designed for professional use while maintaining elegance.",
+      "category": "Bar Accessories",
+      "sku": "RAK-LONGITUDE-SPOON-SET",
+      "price": 69.99,
+      "specifications": {
+        "collection": "Longitude",
+        "material": "stainless steel with porcelain handles",
+        "colors": ["silver", "gold", "white"],
+        "dishwasher_safe": true,
+        "microwave_safe": false,
+        "handmade": false,
+        "pieces": "3-piece set",
+        "dimensions": "Various lengths",
+        "care_instructions": "Hand wash recommended"
+      }
+    },
+    {
+      "name": "RAK Premium Soup Bowls - Set of 6",
+      "description": "Elegant soup bowls featuring the premium RAK design with hand-painted gold accents. Perfect for soups, stews, and other hot dishes. Each bowl is crafted from high-quality porcelain and features a wide rim for comfortable handling. The deep design helps retain heat while maintaining elegance.",
+      "category": "Dinnerware",
+      "sku": "RAK-PREMIUM-SOUP-6PC",
+      "price": 89.99,
+      "specifications": {
+        "collection": "RAK Premium",
+        "material": "porcelain",
+        "colors": ["white", "gold"],
+        "dishwasher_safe": true,
+        "microwave_safe": true,
+        "handmade": true,
+        "pieces": 6,
+        "dimensions": "6 inch diameter, 3 inch depth",
+        "care_instructions": "Dishwasher safe, microwave safe"
+      }
+    },
+    {
+      "name": "RAK Connoisseur Whiskey Glasses - Set of 2",
+      "description": "Premium whiskey glasses designed for connoisseurs. Features crystal-clear glass with subtle gold accents and the signature RAK design. Perfect for enjoying fine spirits and sophisticated entertaining. Each glass is hand-blown for superior quality and clarity.",
+      "category": "Glassware",
+      "sku": "RAK-CONNOISSEUR-WHISKEY-2PC",
+      "price": 59.99,
+      "specifications": {
+        "collection": "Connoisseur Essentials",
+        "material": "crystal glass with gold accents",
+        "colors": ["clear", "gold"],
+        "dishwasher_safe": true,
+        "microwave_safe": false,
+        "handmade": true,
+        "pieces": 2,
+        "dimensions": "Standard whiskey glass size",
+        "care_instructions": "Hand wash recommended, store carefully"
+      }
+    }
+  ]
+}
