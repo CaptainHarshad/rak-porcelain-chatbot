@@ -1,0 +1,51 @@
+# RAK Porcelain RAG Chatbot Development Rules
+
+## Project Overview
+This is a RAG (Retrieval-Augmented Generation) chatbot for RAK Porcelain products. The system uses Supabase + pgvector for embeddings storage and OpenAI for embeddings and chat completion.
+
+## Critical Security Rules
+- NEVER commit API keys to version control
+- OPENAI_API_KEY and SUPABASE_SERVICE_ROLE_KEY must remain server-side only
+- Use environment variables for all sensitive configuration
+- Validate all user inputs on the backend
+
+## RAG Implementation Requirements
+- System prompt MUST enforce context-only responses
+- Always include provenance (product_id, source_type, source_id) in responses
+- Use vector similarity search for retrieval
+- Implement proper error handling for OpenAI API calls
+- Chunk text appropriately for embeddings (500 tokens, 100-token overlap)
+
+## Code Standards
+- Use TypeScript for all backend code
+- Implement proper error handling and logging
+- Use async/await for all async operations
+- Validate environment variables on startup
+- Include proper JSDoc comments for functions
+
+## Database Schema
+- Use UUIDs for all primary keys
+- Implement proper foreign key relationships
+- Use pgvector for embeddings storage
+- Include proper indexes for performance
+- Use timestamps for audit trails
+
+## Frontend Requirements
+- Use React with TypeScript
+- Implement RAK Porcelain branding (Navy #0A2342, Gold #C5A475)
+- Use Montserrat font
+- Mobile-first responsive design
+- Accessible UI components
+
+## Testing Requirements
+- Unit tests for core functions
+- Integration tests for RAG pipeline
+- Mock OpenAI API calls in tests
+- Test provenance accuracy
+- Test error handling scenarios
+
+## File Organization
+- Keep lib/ files focused on single responsibilities
+- Use descriptive function and variable names
+- Group related functionality together
+- Include proper imports and exports
