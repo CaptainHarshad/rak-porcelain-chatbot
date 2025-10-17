@@ -189,7 +189,12 @@ app.post('/api/chat', async (req, res) => {
     
     // Save conversation to database
     if (sessionId) {
-      await saveConversation(sessionId, message, answer, docs);
+      await saveConversation({
+        session_id: sessionId,
+        user_message: message,
+        assistant_message: answer,
+        provenance: docs
+      });
     }
     
     res.json({

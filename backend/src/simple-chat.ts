@@ -47,7 +47,7 @@ async function getEmbedding(text: string): Promise<number[]> {
       throw new Error(`OpenAI API error: ${response.status} ${await response.text()}`);
     }
 
-    const data = await response.json();
+    const data = await response.json() as any;
     return data.data[0].embedding;
   } catch (error) {
     console.error('Error generating embedding:', error);
@@ -75,7 +75,7 @@ async function chatCompletion(systemPrompt: string, messages: Array<any>): Promi
       throw new Error(`OpenAI API error: ${response.status} ${await response.text()}`);
     }
 
-    const data = await response.json();
+    const data = await response.json() as any;
     return data.choices?.[0]?.message?.content ?? '';
   } catch (error) {
     console.error('Error in chat completion:', error);
